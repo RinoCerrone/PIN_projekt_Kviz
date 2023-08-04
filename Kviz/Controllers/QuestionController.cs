@@ -34,6 +34,13 @@ namespace Kviz.Controllers
             return View(quiz);
         }
 
+        [HttpGet("{quizName}")]
+        public IActionResult Quiz(string quizName)
+        {       
+            Quiz quiz = _quizService.GetQuizByName(quizName);
+            return View(quiz);
+        }
+
 [HttpPost("Submit")]
 public IActionResult Submit(Dictionary<string, string> answers)
 {

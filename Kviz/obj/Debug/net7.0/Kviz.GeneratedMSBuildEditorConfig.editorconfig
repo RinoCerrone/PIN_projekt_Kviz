@@ -60,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb24vUXVpelJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Quiz/Quiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVpei9RdWl6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
