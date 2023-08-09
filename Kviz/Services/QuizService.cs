@@ -14,19 +14,19 @@ namespace Kviz.Services
 
         public QuizService()
         {
-            // Initialize the quiz data
+            
             _quizzes = InitializeQuizzes();
             CurrentQuestionIndex = 0;
         }
 
-        // Method to get the quiz
+        
        
         public Quiz GetQuizByName(string quizName)
         {
             return _quizzes.FirstOrDefault(q => q.Title.Equals(quizName, StringComparison.OrdinalIgnoreCase));
         }
 
-        // Method to validate answers and calculate the score
+        
         public int CalculateScore(string quizName, List<string> userAnswers)
         {
             Quiz quiz = GetQuizByName(quizName);
@@ -48,7 +48,7 @@ namespace Kviz.Services
             return score;
         }
 
-        // Helper method to initialize the quiz data
+       
         private List<Quiz> InitializeQuizzes()
         {
             List<Quiz> quizzes = new List<Quiz>();
@@ -163,7 +163,7 @@ namespace Kviz.Services
             quizzes.Add(Povijest);
 
             Quiz Zemljopis = new Quiz();
-            Povijest.Title = "Zemljopis";
+            Zemljopis.Title = "Zemljopis";
 
             Question question11 = new Question
             {
@@ -256,6 +256,8 @@ namespace Kviz.Services
                 CorrectAnswer = "Malawi"
             };
             Zemljopis.Questions.Add(question20);
+
+            quizzes.Add(Zemljopis);
 
             Quiz Sport = new Quiz();
             Sport.Title = "Sport";
@@ -376,6 +378,7 @@ namespace Kviz.Services
             };
             Sport.Questions.Add(question30);
 
+            quizzes.Add(Sport);
 
             Quiz Film = new Quiz();
             Film.Title = "Film";
@@ -396,13 +399,11 @@ namespace Kviz.Services
 
             Question question32 = new Question
             {
-                Text = @"U kojem djelu F. Scott Fitzgeralda je Nick
-                        Carraway narator i jedan od glavnih likova? Četiri
-                        filma su snimljena po ovom djelu, a posljedni
-                        2013. godine sa Leonardom DiCapriom i Tobey
-                        Maguireom.",
-                Answers = new List<string> { "Gangs of New York", "Westside story", "The Irishman","Goodfellas" },
-                CorrectAnswer = "Westside story"
+                Text = @"Kako se zove novozelandski redatelj, producent, trostruki osvajač Oscara,
+                 ako se zna da je publici najviše poznat kao redatelj
+                 i ko-scenarist trilogije Gospodar prstenova?.",
+                Answers = new List<string> { "Ridley Scott", "Peter Jackson", "Taika Waititi","Andrew Adamson" },
+                CorrectAnswer = "Peter Jackson"
             };
             Film.Questions.Add(question32);
 
@@ -490,7 +491,10 @@ namespace Kviz.Services
                 CorrectAnswer = "Smith & Wesson"
             };
             Film.Questions.Add(question40);
-            
+
+
+
+            quizzes.Add(Film);
 
             // Add more questions...
       

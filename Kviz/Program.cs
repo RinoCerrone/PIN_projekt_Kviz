@@ -37,9 +37,9 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "questions",
-    pattern: "Question/{action=Index}/{id?}",
-    defaults: new { controller = "Question" });
+    name: "quizzes",
+    pattern: "Quiz/{quizName}",
+    defaults: new { controller = "Question", action = "Quiz"});
 
 app.MapControllerRoute(
     name: "default",

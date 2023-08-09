@@ -18680,6 +18680,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Question/Quiz.cshtml",
+      "TargetPath": "Views\\Question\\Quiz.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -18697,16 +18702,6 @@
     {
       "FilePath": "/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Quiz/Quiz.cshtml",
-      "TargetPath": "Views\\Quiz\\Quiz.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/tkoma/Vsite/PIN/Kviz/Kviz/Views/Question/Index.cshtml",
-      "TargetPath": "Views\\Question\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
