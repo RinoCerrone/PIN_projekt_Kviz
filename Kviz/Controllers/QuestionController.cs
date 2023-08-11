@@ -40,29 +40,33 @@ namespace Kviz.Controllers
         [HttpPost("Submit")]
         public IActionResult Submit(string quizName, Dictionary<string, string> answers)
         {
-            Quiz quiz = _quizService.GetQuizByName(quizName);
-            
 
-            quiz.UserAnswers = answers;
-
-            
-
-            
-            if (answers.ContainsKey(quiz.Questions.Last().Text))
+            Console.WriteLine($"quizName: {quizName}");
+            Console.WriteLine("Answers:");
+            foreach (var answer in answers)
             {
-                
-                int score = _quizService.CalculateScore(quizName, quiz.UserAnswers.Values.ToList());
+                Console.WriteLine($"{answer.Key}: {answer.Value}");
+            }
+            
 
-                
-                var quizResult = new QuizResult
-                {
-                    Score = score,
-                    Username = User.Identity.Name 
-                };
 
-                
-                _context.QuizResults.Add(quizResult);
-                _context.SaveChanges();
+            Quiz quiz = _quizService.GetQuizByName(quizName);
+            quiz.UserAnswers = answers;
+            
+
+
+            if (answers.Count == quiz.Questions.Count){
+    
+            int score = _quizService.CalculateScore(quizName, quiz.UserAnswers.Values.ToList());
+
+            var quizResult = new QuizResult
+            {
+                Score = score,
+                Username = User.Identity.Name 
+            };
+
+            _context.QuizResults.Add(quizResult);
+            _context.SaveChanges();
 
                 return RedirectToAction("QuizResults", new { score = score });
             }

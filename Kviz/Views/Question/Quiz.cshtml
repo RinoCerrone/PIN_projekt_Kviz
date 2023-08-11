@@ -2,15 +2,19 @@
 
 <h2>@Model.Title</h2>
 
-@foreach (var question in Model.Questions)
-{
-    <div>
-        <h4>@question.Text</h4>
-        @foreach (var answer in question.Answers)
-        {
-            <input type="radio" name="@question.Text" value="@answer"> @answer<br>
-        }
-    </div>
-}
-
-<button type="submit" class="btn btn-primary">Submit</button>
+<form method="post" action="@Url.Action("Submit", "Question")">
+    <input type="hidden" name="quizName" value="@Model.Title">
+    
+    @foreach (var question in Model.Questions)
+    {
+        <div>
+            <h4>@question.Text</h4>
+            @foreach (var answer in question.Answers)
+            {
+                <input type="radio" name="@question.Text" value="@answer"> @answer<br>
+            }
+        </div>
+    }
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
