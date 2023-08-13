@@ -38,24 +38,23 @@ namespace Kviz.Controllers
         }
 
         [HttpPost("Submit")]
-        public IActionResult Submit(string quizName, Dictionary<string, string> answers)
+        public IActionResult Submit(string quizName,Dictionary <string,string> answers)
         {
 
-            Console.WriteLine($"quizName: {quizName}");
-            Console.WriteLine("Answers:");
-            foreach (var answer in answers)
-            {
-                Console.WriteLine($"{answer.Key}: {answer.Value}");
-            }
             
-
+            
+             Console.WriteLine($"quizName: {quizName}");
 
             Quiz quiz = _quizService.GetQuizByName(quizName);
             quiz.UserAnswers = answers;
             
+            foreach (var answer in answers)
+            {
+                Console.WriteLine($"Selected Answer: {answer.Value} for Question: {answer.Key}");
+            }
 
 
-            if (answers.Count == quiz.Questions.Count){
+            if (answers.Count-1 == quiz.Questions.Count){
     
             int score = _quizService.CalculateScore(quizName, quiz.UserAnswers.Values.ToList());
 

@@ -39,7 +39,7 @@ namespace Kviz.Services
 
             for (int i = 0; i < quiz.Questions.Count; i++)
             {
-                if (quiz.Questions[i].CorrectAnswer == userAnswers[i])
+                if (quiz.Questions[i].CorrectAnswer == userAnswers[i+1])
                 {
                     score++;
                 }
@@ -167,11 +167,9 @@ namespace Kviz.Services
 
             Question question11 = new Question
             {
-                Text = @"Ovaj grad najpoznatiji je po siru koji je nazvan po
-                        samom gradu, drugi je najveći grad regije
-                        Emilia-Romagna nakon Bologne. Dom je jednom
-                        od najstarijih sveučilišta na svijetu. Koji je to
-                         grad?",
+                Text = "Ovaj grad najpoznatiji je po siru koji je nazvan po " + "samom gradu, drugi je najveći grad regije "
+                 +"Emilia-Romagna nakon Bologne te ako znamo da je dom jednom " 
+                 +"od najstarijih sveučilišta na svijetu o kojem je gradu riječ?",
                 Answers = new List<string> { "Torino", "Modena", "Ferrara","Parma" },
                 CorrectAnswer = "Parma"
             };
@@ -179,12 +177,9 @@ namespace Kviz.Services
 
             Question question12 = new Question
             {
-                Text = @"Ovaj lučki grad je drugi po broju stanovnika u
-                        svojoj državi, broji ih malo više od 300 tisuća. Koji
-                        je to grad ako znamo da je ime dobio po sestri
-                        Aleksandra Makedonskog?",
+                Text = @"Ovaj lučki grad je drugi po broju stanovnika u svojoj državi, broji ih malo više od 300 tisuća  Koji je to grad ako znamo da je ime dobio po sestri Aleksandra Makedonskog?",
                 Answers = new List<string> { "Solun", "Aleksandrija", "Bitola","Ankara" },
-                CorrectAnswer = "Solun"
+                CorrectAnswer = "Solun" 
             };
             Zemljopis.Questions.Add(question12);
 
@@ -198,7 +193,7 @@ namespace Kviz.Services
 
             Question question14 = new Question
             {
-                Text = @"U kojoj zemlji se nalazi najveci vulkan na svijetu? ",
+                Text = @"U kojoj zemlji se nalazi najveći vulkan na svijetu? ",
                 Answers = new List<string> { "Italija", "Čile", "Indonezija","Havaji(SAD)" },
                 CorrectAnswer = "Havaji(SAD)"
             };
@@ -206,7 +201,7 @@ namespace Kviz.Services
 
             Question question15 = new Question
             {
-                Text = @"Koja pustinja je povrskinski najveca na svijetu? ",
+                Text = @"Koja pustinja je površinski najveća na svijetu? ",
                 Answers = new List<string> { "Sahara", "Antarktička", "Gobi","Kalahari" },
                 CorrectAnswer = "Antarktička"
             };
@@ -222,8 +217,8 @@ namespace Kviz.Services
 
             Question question17 = new Question
             {
-                Text = @"Mađarska graniči sa Hrvatskom,Slovenijom,Rumunjskom,Srbijom,Slovačkom,Austrijom i ...?",
-                Answers = new List<string> { "Ukrajinom", "Češkom", "Poljskom","Bugarskom" },
+                Text = @"Mađarska graniči sa Hrvatskom,Slovenijom,Rumunjskom,Srbijom,Slovačkom,Austrijom i ?",
+                Answers = new List<string> { "Ukrajinom", "Českom", "Poljskom","Bugarskom" },
                 CorrectAnswer = "Ukrajinom"
             };
             Zemljopis.Questions.Add(question17);
@@ -232,7 +227,7 @@ namespace Kviz.Services
             {
                 Text = @"Koje je ime valute Kirgistana i
                         Uzbekistana, a ime dijeli sa jednom kod nas
-                        rasprostranjenom riječnom ribom?",
+                        rasprostranjenom riječnom ribom? ",
                 Answers = new List<string> { "Šaran", "Amur", "Som","Karas" },
                 CorrectAnswer = "Som"
             };
@@ -243,7 +238,7 @@ namespace Kviz.Services
                 Text = @"Kod stockholmskog sindroma talac se
                         emocionalno veže za svog otmičara, a po kojem glavnom gradu se
                         zove suprotan sindrom u kojem se otmičar veže
-                        uz taoce te pokazuje samilost?",
+                        uz taoce te pokazuje samilost? ",
                 Answers = new List<string> { "Lima", "Tokio", "Pariz","Zagreb" },
                 CorrectAnswer = "Lima"
             };
@@ -251,8 +246,8 @@ namespace Kviz.Services
 
              Question question20 = new Question
             {
-                Text = @"Treće najveće jezero u Africi i deveto na svijetu dijeli svoje ime sa državom čiju trećinu ukupnog teritorija zauzima.Koja je to afrička država?",
-                Answers = new List<string> { "Uganda", "Burundi", "Uganda","Malawi" },
+                Text = @"Treće najveće jezero u Africi i deveto na svijetu dijeli svoje ime sa državom čiju trećinu ukupnog teritorija zauzima Koja je to afrička država? ",
+                Answers = new List<string> { "Uganda", "Burundi", "Ruanda","Malawi" },
                 CorrectAnswer = "Malawi"
             };
             Zemljopis.Questions.Add(question20);
