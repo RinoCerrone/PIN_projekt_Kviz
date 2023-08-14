@@ -37,12 +37,27 @@ namespace Kviz.Controllers
             return View(quiz);
         }
 
+        [HttpGet("CorrectAnswers/{quizName}")]
+        public IActionResult CorrectAnswers(string quizName)
+        {
+            Quiz quiz = _quizService.GetQuizByName(quizName);
+            if (quiz == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            
+            return View("CorrectAnswers", quiz);
+        }
+
         [HttpPost("Submit")]
         public IActionResult Submit(string quizName,Dictionary <string,string> answers)
         {
 
             
-            
+           
+
+
              Console.WriteLine($"quizName: {quizName}");
 
             Quiz quiz = _quizService.GetQuizByName(quizName);
@@ -60,6 +75,7 @@ namespace Kviz.Controllers
 
             var quizResult = new QuizResult
             {
+                Title=quizName,
                 Score = score,
                 Username = User.Identity.Name 
             };
@@ -67,7 +83,7 @@ namespace Kviz.Controllers
             _context.QuizResults.Add(quizResult);
             _context.SaveChanges();
 
-                return RedirectToAction("QuizResults", new { score = score });
+                return RedirectToAction("QuizResults", new { score = score , title = quizName});
             }
             else
             {
@@ -75,10 +91,21 @@ namespace Kviz.Controllers
             }
         }
 
+
+         
+
+
         [HttpGet("QuizResults")]
-        public IActionResult QuizResults(int score)
+        public IActionResult QuizResults(int score,string title)
         {
-            return View(score);
+            var quizResult = new QuizResult
+            {
+                Title = title,
+                Score = score
+                
+            };
+
+            return View(quizResult);
         }
 
         

@@ -1,6 +1,8 @@
-@model int
+@model Kviz.Models.QuizResult
 
-<h2>Your Score: @Model/10</h2>
 
-<a asp-controller="Home" asp-action="Index">Back to Quiz Selection</a>
+<h2>Tvoj rezultat: @Model.Score/10</h2>
 
+<a asp-controller="Home" asp-action="Index">Natrag na izbor kvizeva</a><br>
+
+<a href="@Url.Action("CorrectAnswers", "Question", new { quizName = Model.Title })">Točni odgovori</a>

@@ -10,7 +10,7 @@ namespace Kviz.Models
     {
         public string Title { get; set; }
         public List<Question> Questions { get; set; }
-        public string CurrentQuestionId { get; set; }
+        
         public Dictionary<string,string> UserAnswers { get; set; }
 
         public Quiz()

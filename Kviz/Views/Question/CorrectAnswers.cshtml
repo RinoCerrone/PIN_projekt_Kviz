@@ -1,0 +1,20 @@
+@model Kviz.Models.Quiz
+
+<h2>@Model.Title</h2>
+
+@foreach (var question in Model.Questions)
+{
+    <div>
+        <h4>@question.Text</h4>
+        @foreach (var answer in question.Answers)
+        {
+            var sanitizedFieldName = question.Text.Replace(".", "_");
+            
+                <div style="background-color: @(answer == question.CorrectAnswer ? "lightgreen" : "transparent");">
+                    <input type="radio" name="@sanitizedFieldName" value="@answer" @(answer == question.CorrectAnswer ? "checked" : "") >@answer <br>
+                </div>
+                
+           
+        }
+    </div>
+}

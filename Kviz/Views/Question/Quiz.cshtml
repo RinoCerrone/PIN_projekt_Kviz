@@ -13,7 +13,8 @@
             <h4>@question.Text</h4>
             @foreach (var answer in question.Answers)
             {
-                <input type="radio" name="@question.Text" value="@answer"> @answer<br>
+                 var sanitizedFieldName = question.Text.Replace(".", "_");
+                <input  type="radio" name="@sanitizedFieldName" value="@answer"> @answer<br>
             }
 
             

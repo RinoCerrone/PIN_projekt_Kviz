@@ -73,8 +73,8 @@ namespace Kviz.Services
             Question question2 = new Question
             {
                 Text = "Koje godine je započeo Američki građanski rat?",
-                Answers = new List<string> { "1883", "1861", "1872","1868" },
-                CorrectAnswer = "1861"
+                Answers = new List<string> { "1883.", "1861.", "1872.","1868." },
+                CorrectAnswer = "1861."
             };
             Povijest.Questions.Add(question2);
 
@@ -92,7 +92,7 @@ namespace Kviz.Services
                 Text = @"Tko je u grčkoj mitologiji u Hadu čamcem
                         prevozio mrtve duše preko rijeke Aheront i preko
                         rijeke Stiks, a po njemu je ime dobio i najveći
-                        satelit Plutona.",
+                        satelit Plutona?",
                 Answers = new List<string> { "Orfej", "Kerber", "Had","Haron" },
                 CorrectAnswer = "Haron"
             };
@@ -102,9 +102,9 @@ namespace Kviz.Services
             {
                 Text = @"Europske zemlje su tijekom povijesti doslovno raskomadale Afriku. 
                 Jedino je neovisno, uglavnom zbog nepristupačnosti, ostalo Etiopsko kraljevstvo,
-                 i to sve do tridesetih prošlog stoljeća. Koja je to država tada, nakon krvavog rata, 
+                 i to sve do tridesetih godina prošlog stoljeća. Koja je to država tada, nakon krvavog rata, 
                  okupirala ovu državu?",
-                Answers = new List<string> { "Njemacka", "Italija", "SAD","Francuska" },
+                Answers = new List<string> { "Njemačka", "Italija", "SAD","Francuska" },
                 CorrectAnswer = "Italija"
             };
             Povijest.Questions.Add(question5);
@@ -122,9 +122,9 @@ namespace Kviz.Services
 
             Question question7 = new Question
             {
-                Text = "Koga je časopis Time godine 1938. izabrao kao osobu godine?",
-                Answers = new List<string> { "Churchill", "Staljin", "Hitler","F.D. Roosevelt" },
-                CorrectAnswer = "Hitler"
+                Text = "Koga je časopis Time 1938. godine izabrao kao osobu godine?",
+                Answers = new List<string> { "Churchilla", "Staljina", "Hitlera","F.D. Roosevelta" },
+                CorrectAnswer = "Hitlera"
             };
             Povijest.Questions.Add(question7);
 
@@ -177,8 +177,8 @@ namespace Kviz.Services
 
             Question question12 = new Question
             {
-                Text = @"Ovaj lučki grad je drugi po broju stanovnika u svojoj državi, broji ih malo više od 300 tisuća  Koji je to grad ako znamo da je ime dobio po sestri Aleksandra Makedonskog?",
-                Answers = new List<string> { "Solun", "Aleksandrija", "Bitola","Ankara" },
+                Text = @"Ovaj lučki grad je drugi po broju stanovnika u svojoj državi, broji ih malo više od 300 tisuća. Koji je to grad ako znamo da je ime dobio po sestri Aleksandra Makedonskog?",
+                Answers = new List<string> { "Solun", "Aleksandrija", "Varna","Ankara" },
                 CorrectAnswer = "Solun" 
             };
             Zemljopis.Questions.Add(question12);
@@ -217,7 +217,7 @@ namespace Kviz.Services
 
             Question question17 = new Question
             {
-                Text = @"Mađarska graniči sa Hrvatskom,Slovenijom,Rumunjskom,Srbijom,Slovačkom,Austrijom i ?",
+                Text = @"Mađarska graniči sa Hrvatskom,Slovenijom,Rumunjskom,Srbijom,Slovačkom,Austrijom i ...?",
                 Answers = new List<string> { "Ukrajinom", "Českom", "Poljskom","Bugarskom" },
                 CorrectAnswer = "Ukrajinom"
             };
@@ -246,7 +246,7 @@ namespace Kviz.Services
 
              Question question20 = new Question
             {
-                Text = @"Treće najveće jezero u Africi i deveto na svijetu dijeli svoje ime sa državom čiju trećinu ukupnog teritorija zauzima Koja je to afrička država? ",
+                Text = @"Treće najveće jezero u Africi i deveto na svijetu dijeli svoje ime sa državom čiju trećinu ukupnog teritorija zauzima. Koja je to afrička država? ",
                 Answers = new List<string> { "Uganda", "Burundi", "Ruanda","Malawi" },
                 CorrectAnswer = "Malawi"
             };
@@ -260,7 +260,7 @@ namespace Kviz.Services
             Question question21 = new Question
             {
                 Text = @"Nadimka Springboks trenutni su prvaci svijeta u
-                            rugbyju, u finalu su svladali Englesku te treći puta
+                            rugby-u, u finalu su svladali Englesku te treći puta
                             osvojili ovo prestižno natjecanje. Koju
                             reprezentaciju tražimo ako znamo da se dio
                             radnje u filmu Invictus vrti upravo oko njih?",
@@ -272,7 +272,7 @@ namespace Kviz.Services
             Question question22 = new Question
             {
                 Text = @"Ova klasa jedrilice nastala 1970.
-                        godine se koristi uglavnom za sportska
+                        godine koristi se uglavnom za sportska
                         natjecanja i rekreaciju. 1996. godine
                         prvi put se u njoj natječe i na
                         Olimpijskim igrama, a naš Tonči
@@ -289,7 +289,7 @@ namespace Kviz.Services
                         Grand slamova? Većinu ih je osvojila tijekom
                         1960ih godina, a najviše ima Australian Opena,
                         čak 11, jer je logično, rođena u Australiji.",
-                Answers = new List<string> { "Billie Jean King", "Chris Evert", "Monica Seles","Margaret Court" },
+                Answers = new List<string> { "Billie Jean King", "Chris Evert", "Monica Szeles","Margaret Court" },
                 CorrectAnswer = "Margaret Court"
             };
             Sport.Questions.Add(question23);
@@ -298,7 +298,7 @@ namespace Kviz.Services
             Question question24 = new Question
             {
                 Text = @"Opće je poznato u sportskom svijetu da je vozač s
-                            najviše naslova u rallyju Sebastien Loeb sa 9
+                            najviše naslova u rally-u Sebastien Loeb sa 9
                             naslova prvaka. Koja država ima najviše osvojenih
                             naslova prvaka u ovom sportu?",
                 Answers = new List<string> { "Italija", "Francuska", "Finska","Njemačka" },
@@ -313,7 +313,7 @@ namespace Kviz.Services
                         finale kao osmi nositelj Istočne konferencije. Koja
                         ekipa, također u Istočnoj konferenciji, je u
                         playoffu 1999. isto tako uspjela doći do finala u
-                        kojem su izgubili od San Antonio Spursa.",
+                        kojem su izgubili od San Antonio Spursa?",
                 Answers = new List<string> { "Philadelphia 76ers", "New York Knicks", "Boston Celtics","Chicago Bulls" },
                 CorrectAnswer = "New York Knicks"
             };
@@ -334,7 +334,7 @@ namespace Kviz.Services
             {
                 Text = @"Kako je to već postalo uobičajeno u isto vrijeme
                         kad se igra NHL playoff, održava se Svjetsko
-                        prvenstvo u hokeju na ledu, zbog toga na ovom
+                        prvenstvo u hokeju na ledu,i  zbog toga na ovom
                         natjecanju često ne gledamo mnoge najveće
                         zvijezde ovog sporta. Tako je
                         završilo i ovo SP, a pitanje je koja reprezentacija
@@ -358,7 +358,7 @@ namespace Kviz.Services
             {
                 Text = @"Prve ljetne Olimpijske igre na kojima će nastupiti Hrvatska, bile su one u Barceloni 1992. godine, i naš je Olimpijski odbor bio suočen sa dilemom tko će nositi hrvatsku zastavu na otvaranju.
                         Na kraju je izbor bio pravi, jer je nositelj i osvojio odličje.
-                        Kako se zvao koji je nosio zastavu na otvaranju te 1992. godine?",
+                        Tko je nosio zastavu na otvaranju te 1992. godine?",
                 Answers = new List<string> { "Toni Kukoč", "Goran Ivanišević", "Zoran Primorac","Dražen Petrović" },
                 CorrectAnswer = "Goran Ivanišević"
             };
@@ -367,7 +367,7 @@ namespace Kviz.Services
             Question question30 = new Question
             {
                 Text = @"Svi su vjerojatno čuli za legendaran revanš meč Hollyfiled vs. Tyson u kojemu je Tyson Hollyfiledu odgrizao komad uha te time bio diskvalificran.
-                        Pitanje glasi nakon pobjede u prvom meču Hollyfield je postao prvak u teškoji kategoriji koji put?",
+                        Pitanje glasi nakon pobjede u prvom meču Hollyfield je postao prvak u teškoj kategoriji po koji put?",
                 Answers = new List<string> { "1", "4", "3","2" },
                 CorrectAnswer = "4"
             };
@@ -382,7 +382,7 @@ namespace Kviz.Services
             Question question31 = new Question
             {
                 Text = @"Ovaj film Alfred Hitchcock je režirao odmah nakon
-                        Vrtoglavice(Vertigo) te se taj film smarta jednim od
+                        Vrtoglavice(Vertigo) te se taj film smatra jednim od
                         najboljih svih vremena. Glavnu ulogu igra Cary
                         Grant kojemu je to bio četvrti i posljednji film u
                         suradnji s Hitchcockom. Koje je to remek djelo?",
@@ -396,7 +396,7 @@ namespace Kviz.Services
             {
                 Text = @"Kako se zove novozelandski redatelj, producent, trostruki osvajač Oscara,
                  ako se zna da je publici najviše poznat kao redatelj
-                 i ko-scenarist trilogije Gospodar prstenova?.",
+                 i ko-scenarist trilogije Gospodar prstenova?",
                 Answers = new List<string> { "Ridley Scott", "Peter Jackson", "Taika Waititi","Andrew Adamson" },
                 CorrectAnswer = "Peter Jackson"
             };
@@ -442,19 +442,19 @@ namespace Kviz.Services
             {
                 Text = @"Koji glumac je igrao glavnu ulogu Mojsija u
                         spektaklu Cecila DeMillea iz 1956. godine Deset
-                        zapovijedi.Za tu ulogu je zaradio prvu
+                        zapovijedi?Za tu ulogu je zaradio prvu
                         nominaciju za Zlatni globus, a tri godine nakon je
                         osvojio i Oscara za glavnu ulogu u jednom
                         drugom sjajnom filmu.",
-                Answers = new List<string> { "Yul Brynner", "Charles Heston", "John Carradine","Marlon Brando" },
-                CorrectAnswer = "Charles Heston"
+                Answers = new List<string> { "Yul Brynner", "Charlton Heston", "John Carradine","Marlon Brando" },
+                CorrectAnswer = "Charlton Heston"
             };
             Film.Questions.Add(question36);
 
 
             Question question37 = new Question
             {
-                Text = @"Koje je boje tableta koju uzima Neo(Keanu Reeves) od Morpheusa(Laurence Fishburne) u filmu Matrix iz 1999.",
+                Text = @"Koje je boje tableta koju uzima Neo(Keanu Reeves) od Morpheusa(Laurence Fishburne) u filmu Matrix iz 1999?",
                 Answers = new List<string> { "Žute", "Plave", "Crvene","Zelene" },
                 CorrectAnswer = "Crvene"
             };
