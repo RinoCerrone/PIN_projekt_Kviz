@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@model List<(string Title, List<Kviz.Models.QuizResult> Results)>
+@using Microsoft.AspNetCore.Identity
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -15,20 +16,33 @@
     {
         <div class="container mt-4">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a asp-controller="Question" asp-action="Quiz" asp-route-quizName="Povijest" class="btn btn-primary btn-lg">Povijest</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a asp-controller="Question" asp-action="Quiz" asp-route-quizName="Zemljopis" class="btn btn-primary btn-lg">Zemljopis</a>
                 </div>
-                <div class="col-md-4">
+                <br/>
+                <div class="col-md-6">
                     <a asp-controller="Question" asp-action="Quiz" asp-route-quizName="Sport" class="btn btn-primary btn-lg">Sport</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a asp-controller="Question" asp-action="Quiz" asp-route-quizName="Film" class="btn btn-primary btn-lg">Film</a>
                 </div>
 
             </div>
+        </div>
+    
+        <div class="container mt-4">
+            @foreach (var quizResultTuple in Model)
+                {
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            @Html.Partial("_QuizResultsPartial", quizResultTuple)
+                        </div>
+                    </div>
+                }
         </div>
     }
 </div>

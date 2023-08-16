@@ -1,0 +1,21 @@
+@model (string Title, List<Kviz.Models.QuizResult> Results)
+
+<h3>@Model.Title</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in Model.Results)
+        {
+            <tr>
+                <td>@result.Username.Split('@')[0]</td>
+                <td>@result.Score</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
