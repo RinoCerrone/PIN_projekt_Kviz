@@ -10,6 +10,12 @@ Kvizomanija is a web-based quiz application that allows users to test their know
 - View detailed results and scores for each quiz attempt.
 - Compete with friends and other users to climb the leaderboard.
 
+## Development Environment
+
+- Operating System: Linux
+- IDE: Visual Studio Code
+- Database: SQLite
+
 ## Technologies Used
 
 - ASP.NET 7 MVC
