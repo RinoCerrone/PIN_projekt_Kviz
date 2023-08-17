@@ -1,6 +1,5 @@
 # Kvizomanija - Quiz App
 
-![Kvizomanija Logo](/path/to/logo.png)
 
 Kvizomanija is a web-based quiz application that allows users to test their knowledge and skills across various topics. With an intuitive interface and engaging quizzes, users can enjoy an interactive learning experience while competing with others for the top spot on the leaderboard.
 
